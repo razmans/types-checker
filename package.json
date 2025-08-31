@@ -1,6 +1,6 @@
 {
   "name": "@razmans/types-checker",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A CLI to detect duplicate TypeScript interfaces in a project",
   "types": "dist/index.d.ts",
   "bin": {
@@ -28,10 +28,7 @@
     "ts-morph": "^26.0.0"
   },
   "devDependencies": {
-    "@semantic-release/git": "^10.0.1",
-    "@semantic-release/npm": "^12.0.2",
     "@types/node": "^24.3.0",
-    "semantic-release": "^24.2.7",
     "typescript": "^5.9.2"
   },
   "files": [
