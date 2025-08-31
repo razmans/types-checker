@@ -1,6 +1,6 @@
 {
   "name": "@razmans/types-checker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CLI to detect duplicate TypeScript interfaces in a project",
   "types": "dist/index.d.ts",
   "bin": {
@@ -11,7 +11,7 @@
     "build": "tsc",
     "start": "node dist/index.js",
     "prepublishOnly": "npm run build",
-    "test": "node dist/index.js ./test",
+    "test": "npm run test:detected && npm run test:not-detected",
     "test:detected": "node dist/index.js ./test/detected",
     "test:not-detected": "node dist/index.js ./test/not-detected"
   },
@@ -25,11 +25,11 @@
   "license": "MIT",
   "dependencies": {
     "commander": "^14.0.0",
-    "ts-morph": "^26.0.0",
-    "typescript": "^5.9.2"
+    "ts-morph": "^26.0.0"
   },
   "devDependencies": {
-    "@types/node": "^24.3.0"
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2"
   },
   "files": [
     "dist"
