@@ -16,21 +16,13 @@ A TypeScript CLI tool that detects duplicate interfaces across your codebase by 
 
 ```bash
 # Deno
-deno add @yourscope/types-duplicate-finder
+deno add @razmans/types-duplicate-finder
 
 # Node.js
-npx jsr add @yourscope/types-duplicate-finder
+npx jsr add @razmans/types-duplicate-finder
 
 # Bun
-bunx jsr add @yourscope/types-duplicate-finder
-```
-
-### From Source
-
-```bash
-git clone <repository-url>
-cd types-duplicate-finder
-npm install
+bunx jsr add @razmans/types-duplicate-finder
 ```
 
 ## Usage
@@ -39,14 +31,14 @@ npm install
 
 ```bash
 # Using JSR
-npx jsr @yourscope/types-duplicate-finder ./src/types.ts
-deno run -A jsr:@yourscope/types-duplicate-finder ./src/types.ts
+npx jsr @razmans/types-duplicate-finder ./src/types.ts
+deno run -A jsr:@razmans/types-duplicate-finder ./src/types.ts
 
 # Analyze a single file
-npx types-duplicate-finder ./src/types.ts
+npx @razmans/types-duplicate-finder ./src/types.ts
 
 # Analyze an entire directory
-npx types-duplicate-finder ./src
+npx @razmans/types-duplicate-finder ./src
 ```
 
 ### Example Output
@@ -120,14 +112,6 @@ The tool will detect that `User` and `Customer` have identical structures and su
 └── package.json
 ```
 
-### Available Scripts
-
-```bash
-npm run build                    # Build the project
-npm run start                    # Run the built CLI
-npm run start:test-detected      # Test with duplicate examples
-npm run start:test-not-detected  # Test with non-duplicate examples
-```
 
 ### Testing
 
