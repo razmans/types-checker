@@ -1,0 +1,9 @@
+{
+  "name": "@yourscope/types-duplicate-finder",
+  "version": "1.0.0",
+  "exports": "./index.ts",
+  "publish": {
+    "include": ["README.md", "index.ts", "functions/**/*.ts"],
+    "exclude": ["test/**/*", "dist/**/*", "*.config.*"]
+  }
+}

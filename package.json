@@ -1,0 +1,22 @@
+{
+  "name": "types-duplicate-finder",
+  "version": "1.0.0",
+  "bin": "./dist/index.js",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "start": "npx tsx index.ts",
+    "start:test-detected": "npx tsx index.ts ./test/detected",
+    "start:test-not-detected": "npx tsx index.ts ./test/not-detected"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^14.0.0",
+    "ts-morph": "^26.0.0",
+    "typescript": "^5.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0"
+  }
+}
