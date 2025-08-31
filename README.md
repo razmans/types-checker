@@ -1,4 +1,4 @@
-# Types Duplicate Finder
+# Types Checker
 
 A TypeScript CLI tool that detects duplicate interfaces across your codebase by analyzing their structure rather than just their names. This helps identify interfaces that have identical properties but different names, which could be candidates for consolidation.
 
@@ -12,33 +12,24 @@ A TypeScript CLI tool that detects duplicate interfaces across your codebase by 
 
 ## Installation
 
-### From JSR
-
 ```bash
-# Deno
-deno add @razmans/types-duplicate-finder
+npm install -g @razmans/types-checker
 
-# Node.js
-npx jsr add @razmans/types-duplicate-finder
-
-# Bun
-bunx jsr add @razmans/types-duplicate-finder
 ```
+
+
 
 ## Usage
 
 ### Command Line Interface
 
 ```bash
-# Using JSR
-npx jsr @razmans/types-duplicate-finder ./src/types.ts
-deno run -A jsr:@razmans/types-duplicate-finder ./src/types.ts
 
 # Analyze a single file
-npx @razmans/types-duplicate-finder ./src/types.ts
+npx @razmans/types-checker ./src/types.ts
 
 # Analyze an entire directory
-npx @razmans/types-duplicate-finder ./src
+npx @razmans/types-checker ./src
 ```
 
 ### Example Output

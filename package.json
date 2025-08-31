@@ -1,16 +1,27 @@
 {
-  "name": "types-duplicate-finder",
+  "name": "@razmans/types-checker",
   "version": "1.0.0",
-  "bin": "./dist/index.js",
-  "description": "",
-  "main": "index.ts",
+  "description": "A CLI to detect duplicate TypeScript interfaces in a project",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "types-checker": "dist/index.js"
+  },
+  "main": "dist/index.js",
   "scripts": {
-    "start": "npx tsx index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build",
     "start:test-detected": "npx tsx index.ts ./test/detected",
     "start:test-not-detected": "npx tsx index.ts ./test/not-detected"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "typescript",
+    "cli",
+    "interfaces",
+    "refactoring"
+  ],
+  "author": "Razman <https://x.com/@razmans>",
+  "license": "MIT",
   "dependencies": {
     "commander": "^14.0.0",
     "ts-morph": "^26.0.0",
@@ -18,5 +29,12 @@
   },
   "devDependencies": {
     "@types/node": "^24.3.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/razmans/types-duplicate-finder.git"
   }
 }

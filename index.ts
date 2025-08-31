@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { program } from "commander";
 import { resolve } from "path";
 import { statSync } from "fs";
@@ -22,5 +23,8 @@ program
 
     findDuplicateInterfaces(files);
   });
+
+/** Export the CLI program for programmatic usage */
+export { program };
 
 program.parse(process.argv);
