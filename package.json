@@ -1,6 +1,6 @@
 {
   "name": "@razmans/types-checker",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A CLI to detect duplicate TypeScript interfaces in a project",
   "types": "dist/index.d.ts",
   "bin": {
