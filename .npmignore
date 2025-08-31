@@ -3,4 +3,3 @@ src
 test
 *.ts
 tsconfig.json
-secrets
